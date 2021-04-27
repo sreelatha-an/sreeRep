@@ -308,7 +308,7 @@
 </MAPSET>
 </MAP>
 
-<BRANCH NAME="%empattern%" TIMEOUT="" SWITCH="/vemail" LABELEXPRESSIONS="true">
+<BRANCH NAME="/[^]/" TIMEOUT="" SWITCH="/vemail">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
