@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="InsuranceSoapWS" targetNamespace="http://DESKTOP-2N3VGSI/InsuranceService.webservices.v1:InsuranceSoapWS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://DESKTOP-2N3VGSI/InsuranceService.webservices.v1:InsuranceSoapWS" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://DESKTOP-2N3VGSI/InsuranceService.webservices.v1:InsuranceSoapWS" xmlns:tns="http://DESKTOP-2N3VGSI/InsuranceService.webservices.v1:InsuranceSoapWS" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <xsd:element name="cancelInsured" type="tns:cancelInsured"/>
+          <xsd:element name="cancelInsuredResponse" type="tns:cancelInsuredResponse"/>
+          <xsd:element name="createClaims" type="tns:createClaims"/>
+          <xsd:element name="createClaimsResponse" type="tns:createClaimsResponse"/>
+          <xsd:element name="createInsured" type="tns:createInsured"/>
+          <xsd:element name="createInsuredResponse" type="tns:createInsuredResponse"/>
+          <xsd:element name="getAllInsured" type="tns:getAllInsured"/>
+          <xsd:element name="getAllInsuredResponse" type="tns:getAllInsuredResponse"/>
+          <xsd:element name="getInsuredByPolicy" type="tns:getInsuredByPolicy"/>
+          <xsd:element name="getInsuredByPolicyResponse" type="tns:getInsuredByPolicyResponse"/>
+          <xsd:element name="modifyClaims" type="tns:modifyClaims"/>
+          <xsd:element name="modifyInsured" type="tns:modifyInsured"/>
+          <xsd:element name="modifyInsuredResponse" type="tns:modifyInsuredResponse"/>
+          <xsd:complexType name="cancelInsured">
+            <xsd:sequence>
+              <xsd:element name="POLICY_NUMBER_1" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="cancelInsuredResponse">
+            <xsd:sequence>
+              <xsd:element name="NO_CLAIMS_DELETED" nillable="true" type="xsd:string"/>
+              <xsd:element name="NO_POLICY_DELETED" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="createClaims">
+            <xsd:sequence>
+              <xsd:element name="DATE" nillable="true" type="xsd:string"/>
+              <xsd:element name="DETAILS" nillable="true" type="xsd:string"/>
+              <xsd:element name="HOSPITAL_NAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="POLICY_NUMBER" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="createClaimsResponse">
+            <xsd:sequence>
+              <xsd:element name="NO_OF_CLAIMS" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="createInsured">
+            <xsd:sequence>
+              <xsd:element name="POLICY_NUMBER" type="xsd:string"/>
+              <xsd:element name="FIRST_NAME" type="xsd:string"/>
+              <xsd:element name="SECOND_NAME" type="xsd:string"/>
+              <xsd:element name="ORG_NAME" type="xsd:string"/>
+              <xsd:element name="DOB" type="xsd:string"/>
+              <xsd:element name="GENDER" type="xsd:string"/>
+              <xsd:element name="MOBILE" type="xsd:string"/>
+              <xsd:element name="EMAIL" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="createInsuredResponse">
+            <xsd:sequence>
+              <xsd:element name="NO_ROWS_INSERT" nillable="true" type="xsd:string"/>
+              <xsd:element name="result" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="getAllInsured">
+            <xsd:sequence>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="getAllInsuredResponse">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="Policy" nillable="true" type="tns:Policy"/>
+              <xsd:element name="NO_ALL_ROWS" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="Policy">
+            <xsd:sequence>
+              <xsd:element name="POLICY_NUMBER" nillable="true" type="xsd:string"/>
+              <xsd:element name="FIRST_NAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="SECOND_NAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="ORG_NAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="DOB" nillable="true" type="xsd:string"/>
+              <xsd:element name="GENDER" nillable="true" type="xsd:string"/>
+              <xsd:element name="MOBILE" nillable="true" type="xsd:string"/>
+              <xsd:element name="EMAIL" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="getInsuredByPolicy">
+            <xsd:sequence>
+              <xsd:element name="policyNo" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="getInsuredByPolicyResponse">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="Policy" nillable="true" type="tns:Policy2"/>
+              <xsd:element name="NO_ROWS_SELECTED" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="Policy2">
+            <xsd:sequence>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="modifyClaims">
+            <xsd:sequence>
+              <xsd:element name="DATE" nillable="true" type="xsd:string"/>
+              <xsd:element name="DETAILS" nillable="true" type="xsd:string"/>
+              <xsd:element name="HOSPITAL_NAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="CLAIM_ID_1" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="modifyInsured">
+            <xsd:sequence>
+              <xsd:element name="FIRST_NAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="SECOND_NAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="ORG_NAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="DOB" nillable="true" type="xsd:string"/>
+              <xsd:element name="GENDER" nillable="true" type="xsd:string"/>
+              <xsd:element name="MOBILE" nillable="true" type="xsd:string"/>
+              <xsd:element name="EMAIL" nillable="true" type="xsd:string"/>
+              <xsd:element name="POLICY_NUMBER_1" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="modifyInsuredResponse">
+            <xsd:sequence>
+              <xsd:element name="NO_ROWS_UPDATED" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="InsuranceSoapWS_PortType_getAllInsured">
+    <wsdl:part name="parameters" element="tns:getAllInsured">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InsuranceSoapWS_PortType_cancelInsured">
+    <wsdl:part name="parameters" element="tns:cancelInsured">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InsuranceSoapWS_PortType_modifyInsuredResponse">
+    <wsdl:part name="parameters" element="tns:modifyInsuredResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InsuranceSoapWS_PortType_modifyClaims">
+    <wsdl:part name="parameters" element="tns:modifyClaims">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InsuranceSoapWS_PortType_createInsured">
+    <wsdl:part name="parameters" element="tns:createInsured">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InsuranceSoapWS_PortType_getInsuredByPolicyResponse">
+    <wsdl:part name="parameters" element="tns:getInsuredByPolicyResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InsuranceSoapWS_PortType_createClaimsResponse">
+    <wsdl:part name="parameters" element="tns:createClaimsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InsuranceSoapWS_PortType_createInsuredResponse">
+    <wsdl:part name="parameters" element="tns:createInsuredResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InsuranceSoapWS_PortType_getInsuredByPolicy">
+    <wsdl:part name="parameters" element="tns:getInsuredByPolicy">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InsuranceSoapWS_PortType_getAllInsuredResponse">
+    <wsdl:part name="parameters" element="tns:getAllInsuredResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InsuranceSoapWS_PortType_createClaims">
+    <wsdl:part name="parameters" element="tns:createClaims">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InsuranceSoapWS_PortType_modifyInsured">
+    <wsdl:part name="parameters" element="tns:modifyInsured">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InsuranceSoapWS_PortType_cancelInsuredResponse">
+    <wsdl:part name="parameters" element="tns:cancelInsuredResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="InsuranceSoapWS_PortType">
+    <wsdl:operation name="modifyClaims">
+      <wsdl:input message="tns:InsuranceSoapWS_PortType_modifyClaims">
+    </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="getInsuredByPolicy">
+      <wsdl:input message="tns:InsuranceSoapWS_PortType_getInsuredByPolicy">
+    </wsdl:input>
+      <wsdl:output message="tns:InsuranceSoapWS_PortType_getInsuredByPolicyResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyInsured">
+      <wsdl:input message="tns:InsuranceSoapWS_PortType_modifyInsured">
+    </wsdl:input>
+      <wsdl:output message="tns:InsuranceSoapWS_PortType_modifyInsuredResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createClaims">
+      <wsdl:input message="tns:InsuranceSoapWS_PortType_createClaims">
+    </wsdl:input>
+      <wsdl:output message="tns:InsuranceSoapWS_PortType_createClaimsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createInsured">
+      <wsdl:input message="tns:InsuranceSoapWS_PortType_createInsured">
+    </wsdl:input>
+      <wsdl:output message="tns:InsuranceSoapWS_PortType_createInsuredResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancelInsured">
+      <wsdl:input message="tns:InsuranceSoapWS_PortType_cancelInsured">
+    </wsdl:input>
+      <wsdl:output message="tns:InsuranceSoapWS_PortType_cancelInsuredResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllInsured">
+      <wsdl:input message="tns:InsuranceSoapWS_PortType_getAllInsured">
+    </wsdl:input>
+      <wsdl:output message="tns:InsuranceSoapWS_PortType_getAllInsuredResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="InsuranceService_webservices_v1_InsuranceSoapWS_Binder" type="tns:InsuranceSoapWS_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="modifyClaims">
+      <soap:operation soapAction="InsuranceService_webservices_v1_InsuranceSoapWS_Binder_modifyClaims" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="getInsuredByPolicy">
+      <soap:operation soapAction="InsuranceService_webservices_v1_InsuranceSoapWS_Binder_getInsuredByPolicy" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyInsured">
+      <soap:operation soapAction="InsuranceService_webservices_v1_InsuranceSoapWS_Binder_modifyInsured" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createClaims">
+      <soap:operation soapAction="InsuranceService_webservices_v1_InsuranceSoapWS_Binder_createClaims" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createInsured">
+      <soap:operation soapAction="InsuranceService_webservices_v1_InsuranceSoapWS_Binder_createInsured" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancelInsured">
+      <soap:operation soapAction="InsuranceService_webservices_v1_InsuranceSoapWS_Binder_cancelInsured" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllInsured">
+      <soap:operation soapAction="InsuranceService_webservices_v1_InsuranceSoapWS_Binder_getAllInsured" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InsuranceService.webservices.v1.InsuranceSoapWS">
+    <wsdl:port name="InsuranceService_webservices_v1_InsuranceSoapWS_Port" binding="tns:InsuranceService_webservices_v1_InsuranceSoapWS_Binder">
+      <soap:address location="http://DESKTOP-2N3VGSI:5555/ws/InsuranceService.webservices.v1:InsuranceSoapWS/InsuranceService_webservices_v1_InsuranceSoapWS_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
