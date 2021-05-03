@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.0" CLEANUP="true">
+
+  <!-- nodes -->
+
+<INVOKE SERVICE="InsuranceDocs.docs.v1._new_OData.dbo_INSURED._ODataInteractions:ODataPost">
+  <COMMENT></COMMENT>
+</INVOKE>
+</FLOW>

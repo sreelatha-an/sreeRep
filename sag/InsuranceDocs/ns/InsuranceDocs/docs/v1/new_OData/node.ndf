@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">odataService</value>
+  <value name="node_nsName">InsuranceDocs.docs.v1:new_OData</value>
+  <value name="node_pkg">InsuranceDocs</value>
+  <null name="node_comment"/>
+  <record name="ODataSchema" javaclass="com.wm.util.Values">
+    <value name="Namespace">InsuranceDocs.docs.v1:new_OData</value>
+    <null name="Alias"/>
+    <value name="ODataVersion">v2</value>
+    <array name="EntityType" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="Name">dbo_INSURED</value>
+        <value name="SourceId">dbo.INSURED</value>
+        <value name="ConnectionAlias">CandConnections.connections.v1:Training_NT</value>
+        <value name="AdapterType">JDBCAdapter</value>
+        <array name="Property" type="record" depth="1">
+          <record javaclass="com.wm.util.Values">
+            <value name="Name">POLICY_NUMBER</value>
+            <value name="Type">String</value>
+            <value name="SourceId">POLICY_NUMBER</value>
+            <value name="JavaType">STRING</value>
+            <Boolean name="IsKey">true</Boolean>
+            <record name="PropertyFacets" javaclass="com.wm.util.Values">
+              <Boolean name="Nullable">false</Boolean>
+              <null name="Default"/>
+              <value name="MaxLength">50</value>
+              <Boolean name="FixedLength">false</Boolean>
+              <Boolean name="Unicode">true</Boolean>
+              <null name="Collation"/>
+            </record>
+            <Boolean name="IsScalar">true</Boolean>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="Name">FIRST_NAME</value>
+            <value name="Type">String</value>
+            <value name="SourceId">FIRST_NAME</value>
+            <value name="JavaType">STRING</value>
+            <Boolean name="IsKey">false</Boolean>
+            <record name="PropertyFacets" javaclass="com.wm.util.Values">
+              <Boolean name="Nullable">false</Boolean>
+              <null name="Default"/>
+              <value name="MaxLength">50</value>
+              <Boolean name="FixedLength">false</Boolean>
+              <Boolean name="Unicode">true</Boolean>
+              <null name="Collation"/>
+            </record>
+            <Boolean name="IsScalar">true</Boolean>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="Name">SECOND_NAME</value>
+            <value name="Type">String</value>
+            <value name="SourceId">SECOND_NAME</value>
+            <value name="JavaType">STRING</value>
+            <Boolean name="IsKey">false</Boolean>
+            <record name="PropertyFacets" javaclass="com.wm.util.Values">
+              <Boolean name="Nullable">false</Boolean>
+              <null name="Default"/>
+              <value name="MaxLength">50</value>
+              <Boolean name="FixedLength">false</Boolean>
+              <Boolean name="Unicode">true</Boolean>
+              <null name="Collation"/>
+            </record>
+            <Boolean name="IsScalar">true</Boolean>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="Name">EMAIL</value>
+            <value name="Type">String</value>
+            <value name="SourceId">EMAIL</value>
+            <value name="JavaType">STRING</value>
+            <Boolean name="IsKey">false</Boolean>
+            <record name="PropertyFacets" javaclass="com.wm.util.Values">
+              <Boolean name="Nullable">false</Boolean>
+              <null name="Default"/>
+              <value name="MaxLength">50</value>
+              <Boolean name="FixedLength">false</Boolean>
+              <Boolean name="Unicode">true</Boolean>
+              <null name="Collation"/>
+            </record>
+            <Boolean name="IsScalar">true</Boolean>
+          </record>
+        </array>
+        <array name="NavigationProperty" type="record" depth="1">
+        </array>
+      </record>
+    </array>
+    <array name="ComplexType" type="record" depth="1">
+    </array>
+    <array name="Association" type="record" depth="1">
+    </array>
+    <Boolean name="useCustomFilter">false</Boolean>
+  </record>
+  <value name="nsODataServiceNodeVersion">V1</value>
+  <Boolean name="useCustomFilter">false</Boolean>
+  <array name="nsODataServiceNodeReferences" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="entityTypeName">dbo_INSURED</value>
+      <array name="entityTypeReferences" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="etOperationType">DELETE</value>
+          <value name="etServiceName">InsuranceDocs.docs.v1._new_OData.dbo_INSURED:_delete</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="etOperationType">GET</value>
+          <value name="etServiceName">InsuranceDocs.docs.v1._new_OData.dbo_INSURED:_retrieve</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="etOperationType">POST</value>
+          <value name="etServiceName">InsuranceDocs.docs.v1._new_OData.dbo_INSURED:_insert</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="etOperationType">PUT</value>
+          <value name="etServiceName">InsuranceDocs.docs.v1._new_OData.dbo_INSURED:_update</value>
+        </record>
+      </array>
+    </record>
+  </array>
+</Values>
