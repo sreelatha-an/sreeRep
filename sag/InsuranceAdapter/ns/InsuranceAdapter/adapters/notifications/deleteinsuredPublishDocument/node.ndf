@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="record" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="node_nsName">InsuranceAdapter.adapters.notifications:deleteinsuredPublishDocument</value>
+    <value name="node_pkg">InsuranceAdapter</value>
+    <record name="node_hints" javaclass="com.wm.util.Values">
+      <value name="NotificationDocument"></value>
+      <null name="CURRENT_NODE"/>
+    </record>
+    <value name="is_public">false</value>
+    <value name="field_name">deleteinsuredPublishDocument</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <number name="nanostamp" type="Long">565080611187900</number>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">POLICY_NUMBER</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <number name="protobufKey" type="Integer">1</number>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">FIRST_NAME</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <number name="protobufKey" type="Integer">2</number>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">SECOND_NAME</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <number name="protobufKey" type="Integer">3</number>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">EMAIL</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <number name="protobufKey" type="Integer">4</number>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">_env</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <number name="protobufKey" type="Integer">536870910</number>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">pub.publish:envelope</value>
+      </record>
+    </array>
+    <record name="eventDescription" javaclass="com.wm.util.Values">
+      <value name="brokerEventTypeName">wm::is::InsuranceAdapter::adapters::notifications::deleteinsuredPublishDocument</value>
+      <value name="timeToLive">0</value>
+      <value name="storageType">guaranteed</value>
+      <value name="clientValidation">true</value>
+      <Boolean name="enableProtoBuf">true</Boolean>
+      <byte name="protoBufDescriptor">
+CrkLCglwZHQucHJvdG8i3wEKREluc3VyYW5jZUFkYXB0ZXJfYWRhcHRlcnNfbm90aWZpY2F0aW9uc19kZWxldGVpbnN1cmVkUHVibGlzaERvY3VtZW50EiMKDVBPTElDWV9OVU1CRVIYASABKAlSDFBPTElDWU5VTUJFUhIdCgpGSVJTVF9OQU1FGAIgASgJUglGSVJTVE5BTUUSHwoLU0VDT05EX05BTUUYAyABKAlSClNFQ09ORE5BTUUSFAoFRU1BSUwYBCABKAlSBUVNQUlMEhwKBF9lbnYY/v///wEgASgLMgUuX2VudlIDRW52IuUICgRfZW52Eh4KCmFjdGl2YXRpb24YASABKAlSCmFjdGl2YXRpb24SIAoLYXBwTGFzdFNlcW4YAiABKAVSC2FwcExhc3RTZXFuEiAKC2FwcFBhc3N3b3JkGAMgASgJUgthcHBQYXNzd29yZBIYCgdhcHBTZXFuGAQgASgFUgdhcHBTZXFuEiAKC2FwcFVzZXJOYW1lGAUgASgJUgthcHBVc2VyTmFtZRIaCghwcmlvcml0eRgGIAEoBVIIcHJpb3JpdHkSKAoPYnVzaW5lc3NDb250ZXh0GAcgASgJUg9idXNpbmVzc0NvbnRleHQSIgoMY29udHJvbExhYmVsGAggAygFUgxjb250cm9sTGFiZWwSGgoIZXJyb3JzVG8YCSABKAlSCGVycm9yc1RvEigKD2Vycm9yUmVxdWVzdHNUbxgKIAEoCVIPZXJyb3JSZXF1ZXN0c1RvEhYKBmxvY2FsZRgLIAEoCVIGbG9jYWxlEh4KCm1heFJlc3VsdHMYDCABKAVSCm1heFJlc3VsdHMSGAoHcmVwbHlUbxgNIAEoCVIHcmVwbHlUbxIaCghydW5MZXZlbBgOIAEoBVIIcnVuTGV2ZWwSHAoJc2lnbmF0dXJlGA8gASgMUglzaWduYXR1cmUSJAoNc2lnbmF0dXJlVHlwZRgQIAEoCVINc2lnbmF0dXJlVHlwZRIgCgtzdGFydFJlc3VsdBgRIAEoBVILc3RhcnRSZXN1bHQSEAoDdGFnGBIgASgFUgN0YWcSGAoHdHJhY2tJZBgTIAEoCVIHdHJhY2tJZBIkCg10cmFuc2FjdGlvbklkGBQgASgJUg10cmFuc2FjdGlvbklkEiYKDnRyYW5zZm9ybVN0YXRlGBUgASgJUg50cmFuc2Zvcm1TdGF0ZRIQCgNhZ2UYFiABKAVSA2FnZRIwChNjb25uZWN0aW9uSW50ZWdyaXR5GBcgASgJUhNjb25uZWN0aW9uSW50ZWdyaXR5EhYKBmRlc3RJZBgYIAEoCVIGZGVzdElkEiAKC2VucXVldWVUaW1lGBkgASgDUgtlbnF1ZXVlVGltZRIcCglsb2dCcm9rZXIYGiABKAlSCWxvZ0Jyb2tlchIYCgdsb2dIb3N0GBsgASgJUgdsb2dIb3N0EjIKFHB1YkRpc3Rpbmd1aXNoZWROYW1lGBwgASgJUhRwdWJEaXN0aW5ndWlzaGVkTmFtZRIUCgVwdWJJZBgdIAEoCVIFcHViSWQSHgoKcHViTmV0QWRkchgeIAEoDFIKcHViTmV0QWRkchIYCgdwdWJTZXFuGB8gASgDUgdwdWJTZXFuEhoKCHB1YkxhYmVsGCAgAygFUghwdWJMYWJlbBIaCghyZWN2VGltZRghIAEoA1IIcmVjdlRpbWUSIQoFcm91dGUYIiADKAsyCy5fZW52X3JvdXRlUgVyb3V0ZRISCgR1dWlkGCMgASgJUgR1dWlkEhYKBnN0YXR1cxgkIAEoCVIGc3RhdHVzImIKCl9lbnZfcm91dGUSFgoGYnJva2VyGAEgASgJUgZicm9rZXISGgoIcmVjdlRpbWUYAiABKANSCHJlY3ZUaW1lEiAKC2VucXVldWVUaW1lGAMgASgDUgtlbnF1ZXVlVGltZQ==      </byte>
+    </record>
+    <value name="modifiable">true</value>
+    <number name="lastProtobufKey" type="Integer">4</number>
+    <Boolean name="enableProtoBuf">true</Boolean>
+    <byte name="protoBufDescriptor">
+CrkLCglwZHQucHJvdG8i3wEKREluc3VyYW5jZUFkYXB0ZXJfYWRhcHRlcnNfbm90aWZpY2F0aW9uc19kZWxldGVpbnN1cmVkUHVibGlzaERvY3VtZW50EiMKDVBPTElDWV9OVU1CRVIYASABKAlSDFBPTElDWU5VTUJFUhIdCgpGSVJTVF9OQU1FGAIgASgJUglGSVJTVE5BTUUSHwoLU0VDT05EX05BTUUYAyABKAlSClNFQ09ORE5BTUUSFAoFRU1BSUwYBCABKAlSBUVNQUlMEhwKBF9lbnYY/v///wEgASgLMgUuX2VudlIDRW52IuUICgRfZW52Eh4KCmFjdGl2YXRpb24YASABKAlSCmFjdGl2YXRpb24SIAoLYXBwTGFzdFNlcW4YAiABKAVSC2FwcExhc3RTZXFuEiAKC2FwcFBhc3N3b3JkGAMgASgJUgthcHBQYXNzd29yZBIYCgdhcHBTZXFuGAQgASgFUgdhcHBTZXFuEiAKC2FwcFVzZXJOYW1lGAUgASgJUgthcHBVc2VyTmFtZRIaCghwcmlvcml0eRgGIAEoBVIIcHJpb3JpdHkSKAoPYnVzaW5lc3NDb250ZXh0GAcgASgJUg9idXNpbmVzc0NvbnRleHQSIgoMY29udHJvbExhYmVsGAggAygFUgxjb250cm9sTGFiZWwSGgoIZXJyb3JzVG8YCSABKAlSCGVycm9yc1RvEigKD2Vycm9yUmVxdWVzdHNUbxgKIAEoCVIPZXJyb3JSZXF1ZXN0c1RvEhYKBmxvY2FsZRgLIAEoCVIGbG9jYWxlEh4KCm1heFJlc3VsdHMYDCABKAVSCm1heFJlc3VsdHMSGAoHcmVwbHlUbxgNIAEoCVIHcmVwbHlUbxIaCghydW5MZXZlbBgOIAEoBVIIcnVuTGV2ZWwSHAoJc2lnbmF0dXJlGA8gASgMUglzaWduYXR1cmUSJAoNc2lnbmF0dXJlVHlwZRgQIAEoCVINc2lnbmF0dXJlVHlwZRIgCgtzdGFydFJlc3VsdBgRIAEoBVILc3RhcnRSZXN1bHQSEAoDdGFnGBIgASgFUgN0YWcSGAoHdHJhY2tJZBgTIAEoCVIHdHJhY2tJZBIkCg10cmFuc2FjdGlvbklkGBQgASgJUg10cmFuc2FjdGlvbklkEiYKDnRyYW5zZm9ybVN0YXRlGBUgASgJUg50cmFuc2Zvcm1TdGF0ZRIQCgNhZ2UYFiABKAVSA2FnZRIwChNjb25uZWN0aW9uSW50ZWdyaXR5GBcgASgJUhNjb25uZWN0aW9uSW50ZWdyaXR5EhYKBmRlc3RJZBgYIAEoCVIGZGVzdElkEiAKC2VucXVldWVUaW1lGBkgASgDUgtlbnF1ZXVlVGltZRIcCglsb2dCcm9rZXIYGiABKAlSCWxvZ0Jyb2tlchIYCgdsb2dIb3N0GBsgASgJUgdsb2dIb3N0EjIKFHB1YkRpc3Rpbmd1aXNoZWROYW1lGBwgASgJUhRwdWJEaXN0aW5ndWlzaGVkTmFtZRIUCgVwdWJJZBgdIAEoCVIFcHViSWQSHgoKcHViTmV0QWRkchgeIAEoDFIKcHViTmV0QWRkchIYCgdwdWJTZXFuGB8gASgDUgdwdWJTZXFuEhoKCHB1YkxhYmVsGCAgAygFUghwdWJMYWJlbBIaCghyZWN2VGltZRghIAEoA1IIcmVjdlRpbWUSIQoFcm91dGUYIiADKAsyCy5fZW52X3JvdXRlUgVyb3V0ZRISCgR1dWlkGCMgASgJUgR1dWlkEhYKBnN0YXR1cxgkIAEoCVIGc3RhdHVzImIKCl9lbnZfcm91dGUSFgoGYnJva2VyGAEgASgJUgZicm9rZXISGgoIcmVjdlRpbWUYAiABKANSCHJlY3ZUaW1lEiAKC2VucXVldWVUaW1lGAMgASgDUgtlbnF1ZXVlVGltZQ==    </byte>
+  </record>
+</Values>
