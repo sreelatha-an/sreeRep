@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">restResource</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">Candidates.webservices.v1.njasonRes:CandNJRes</value>
+  <value name="node_pkg">Candidates</value>
+  <value name="is_public">false</value>
+  <record name="restResource" javaclass="com.wm.util.Values">
+    <value name="resourceName">CandNJRes</value>
+    <value name="nsName">Candidates.webservices.v1.njasonRes:CandNJRes</value>
+    <array name="operations" type="record" depth="1">
+    </array>
+  </record>
+  <null name="originUri"/>
+  <value name="resourceName">CandNJRes</value>
+  <Boolean name="modifiable">true</Boolean>
+  <value name="srcdoctypename">Candidates.webservices.restRad.doc:Candidates</value>
+  <value name="assocdoctypename">Candidates.webservices.v1.njasonRes.CandNJRes_.docTypes:CandNJRes</value>
+  <Boolean name="isjsonapi">false</Boolean>
+  <array name="attributes" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="attributeName">candNo</value>
+      <value name="attributeType">String</value>
+      <number name="objectWrapperType" type="Integer">0</number>
+      <record name="actualField" javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">candNo</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="attributeName">candName</value>
+      <value name="attributeType">String</value>
+      <number name="objectWrapperType" type="Integer">0</number>
+      <record name="actualField" javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">candName</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </record>
+  </array>
+</Values>

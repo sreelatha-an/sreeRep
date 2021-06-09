@@ -6,7 +6,7 @@
       <number name="port" type="Integer">5522</number>
       <value name="protocol">HTTP</value>
       <value name="pkg">FashionSiteServices</value>
-      <value name="enabled">true</value>
+      <value name="enabled">false</value>
       <value name="key">HTTPListener@5522</value>
       <value name="uniqueID">e8b577fe88ff4e2faa22987fde4a4788</value>
       <value name="portAlias">webport</value>
@@ -24,6 +24,7 @@
       <value name="curDelay">0</value>
       <value name="stepsize">10000</value>
       <value name="suspended">false</value>
+      <null name="jsseDisabledProtocols"/>
       <null name="jsseEnabledProtocols"/>
     </record>
   </record>
@@ -1254,86 +1255,86 @@
           <value>wm.server.access:getPasswordExpirySettings</value>
           <value>pub.soap.utils:getXOPObjectContent</value>
           <value>wm.art.dev.connection:fetchConnectionManagerMetadata</value>
+          <value>wm.server.schedule:serviceList</value>
           <value>wm.server.jndi:searchGroups</value>
           <value>wm.server.ns:putSource</value>
-          <value>wm.server.schedule:serviceList</value>
           <value>wm.server.replicator:subscriptionAdd</value>
           <value>wm.server.httpUrlAlias:validate</value>
           <value>wm.server.security.openid:setIdProvider</value>
           <value>pub.client.ftp:mget</value>
           <value>wm.server.record:generateFromXSDSource</value>
           <value>wm.server.apigateway:isAPIGatewayLicensed</value>
-          <value>wm.server.triggers:deleteTrigger</value>
           <value>wm.server.xidl:getPackages</value>
+          <value>wm.server.triggers:deleteTrigger</value>
           <value>pub.client:ftp</value>
           <value>wm.server.query:getServiceAuditRecords</value>
           <value>pub.flatFile.generate:createFFDictionary</value>
           <value>wm.server.admin:setSecurityAuditSettings</value>
           <value>wm.server.swagger:generateUsingSwagger</value>
           <value>wm.server.codegen:isJavaDebugEnabled</value>
-          <value>wm.server.globalvariables:getGlobalVariableValue</value>
-          <value>wm.jsonapi.mediatype:addSupport</value>
           <value>wm.server.schedule:pinTaskOnNodes</value>
+          <value>wm.jsonapi.mediatype:addSupport</value>
+          <value>wm.server.globalvariables:getGlobalVariableValue</value>
           <value>wm.server.security.certificate:getDetailedInfo</value>
           <value>wm.server.access:resetPasswordExpirySettings</value>
           <value>pub.packages:recoverPackage</value>
           <value>wm.server:noop</value>
           <value>wm.server.enterprisegateway:exportRuleSet</value>
-          <value>wm.server.monitor.serviceAudit:getChildDetails</value>
           <value>wm.art.dev.service:deleteAdapterServiceNode</value>
-          <value>wm.server.packages:packageRemoveShutdownService</value>
+          <value>wm.server.monitor.serviceAudit:getChildDetails</value>
           <value>wm.server.ff:validateStructure</value>
+          <value>wm.server.packages:packageRemoveShutdownService</value>
           <value>wm.server.proxy:isFTPDefaultConfigured</value>
-          <value>pub.soap.handler:addBodyBlock</value>
           <value>wm.server.flow:singleStepMap</value>
+          <value>pub.soap.handler:addBodyBlock</value>
           <value>wm.server.flowGen:generateFromXMLString</value>
           <value>pub.mime:addBodyPart</value>
           <value>pub.mqtt:publish</value>
           <value>pub.xmldata:xmlDataToXMLString</value>
           <value>pub.scheduler:addComplexTask</value>
-          <value>wm.server.schedule:getLogicalClusterNodeName</value>
           <value>wm.server.ed:syncToBroker</value>
+          <value>wm.server.schedule:getLogicalClusterNodeName</value>
           <value>pub.websocket:disconnect</value>
           <value>wm.server.replicator:getPublisherInfo</value>
-          <value>pub.soap.wsrm:terminateSequence</value>
           <value>wm.server.messaging:createConnectionAlias</value>
+          <value>pub.soap.wsrm:terminateSequence</value>
           <value>wm.server.healthindicators:changeHealthIndicator</value>
           <value>wm.server.jdbcpool:getFunctionalDefinitions</value>
           <value>wm.server.admin:setNeedNewNodeInfo</value>
           <value>wm.server.oauth:updateClientRegistration</value>
           <value>wm.server.flowdebugger:execute</value>
           <value>wm.server.oauthclient:removeConnectionConfig</value>
-          <value>wm.server.configurationvariables:getAppliedTemplate</value>
-          <value>pub.file:getFile</value>
           <value>wm.server.net.listeners:listSecurityProviders</value>
+          <value>pub.file:getFile</value>
+          <value>wm.server.configurationvariables:getAppliedTemplate</value>
           <value>pub.websocket:ping</value>
           <value>wm.server.ed:submit</value>
           <value>wm.server.Doc:registerHasOnlineHelp</value>
-          <value>pub.tx:resetOutbound</value>
           <value>pub.string:HTMLEncode</value>
+          <value>pub.tx:resetOutbound</value>
           <value>pub.string:isDate</value>
           <value>pub.remote.gd:end</value>
           <value>pub.storage:deleteStore</value>
           <value>wm.server.query:getPasswordSettings</value>
           <value>wm.server.oauth:getClientRegistration</value>
           <value>pub.storage:get</value>
-          <value>wm.server.jdbcpool:addPoolAlias</value>
-          <value>pub.replicator:distributeViaSvcPush</value>
           <value>wm.server.packages:drawDependencyGraph</value>
+          <value>pub.replicator:distributeViaSvcPush</value>
+          <value>wm.server.jdbcpool:addPoolAlias</value>
           <value>wm.server.replicator.adminui:queryPublisherForPackages</value>
           <value>wm.server.deployer:getNumberOfCheckpointedArtifacts</value>
           <value>wm.server.jms:clearCSQ</value>
-          <value>wm.server.access:userChange</value>
           <value>wm.server.ns:getLockedNodesForAllUsers</value>
-          <value>pub.math:subtractInts</value>
+          <value>wm.server.access:userChange</value>
           <value>wm.server.security.openid:deleteIdProvider</value>
+          <value>pub.math:subtractInts</value>
           <value>wm.server.deployer.spi.wsProvider_.services:Ping</value>
           <value>wm.server.ns:exportNode</value>
           <value>wm.server.oauth:validateAccessToken</value>
           <value>wm.server.oauthclient:putConnectionConfig</value>
           <value>wm.server.quiesce:getCurrentMode</value>
-          <value>wm.server.deployer.spi:wsProviderV2</value>
           <value>wm.server.access:unlockAccount</value>
+          <value>wm.server.deployer.spi:wsProviderV2</value>
           <value>wm.server.record:generateXmlDataRecordsFromXSDSource</value>
           <value>wm.xslt.Admin:getAvailableTransformerFactoryClasses</value>
           <value>wm.server.flowdebugger:removeBreakPoints</value>
@@ -1342,41 +1343,41 @@
           <value>wm.server.ws:waitUntilSequenceCompleted</value>
           <value>wm.art.dev.connection:updateConnectionNode</value>
           <value>pub.replicator:distributeViaFTP</value>
-          <value>wm.server.admin:cancelPendingShutdown</value>
           <value>wm.server.ws:getServerName</value>
-          <value>pub.soap.handler:getProperty</value>
+          <value>wm.server.admin:cancelPendingShutdown</value>
           <value>pub.soap.wsrm:closeSequence</value>
+          <value>pub.soap.handler:getProperty</value>
           <value>wm.server.registry:aliasExists</value>
           <value>wm.server.net.listeners:listAllFactories</value>
           <value>wm.server.rsd:listOfSecurityTypes</value>
-          <value>wm.server.packages:packageList</value>
           <value>wm.server.proxy:getDefaultHTTPSProxyAlias</value>
+          <value>wm.server.packages:packageList</value>
           <value>pub.math:roundNumber</value>
-          <value>pub.cache.serviceResults:addCacheEntry</value>
           <value>wm.xslt.Admin:getTransformerFactorySettings</value>
+          <value>pub.cache.serviceResults:addCacheEntry</value>
           <value>wm.server.jdbcpool:getFunctionalAlias</value>
           <value>pub.soap.handler:listProvider</value>
           <value>wm.server.healthindicators:getHealthIndicatorProperties</value>
           <value>pub.universalName:find</value>
-          <value>wm.server.enterprisegateway:getEnterpriseGatewayInfo</value>
           <value>wm.server.access:addGroups</value>
+          <value>wm.server.enterprisegateway:getEnterpriseGatewayInfo</value>
           <value>pub.xmldata:setAttribute</value>
           <value>wm.art.dev.notification:updateListenerNotificationNode</value>
           <value>wm.server.portAccess:portList</value>
           <value>wm.server.saml:addIssuer</value>
           <value>pub.soap.handler:getInitialSOAPMessage</value>
-          <value>pub.soap.utils:stringToSoapData</value>
           <value>wm.server.replicator.adminui:subscriberCancel</value>
-          <value>wm.server.query:getPartialLog</value>
+          <value>pub.soap.utils:stringToSoapData</value>
           <value>wm.server.query:getSecurityAuditSettings</value>
+          <value>wm.server.query:getPartialLog</value>
           <value>wm.adapter.wmjdbc.admin:unregisterAdapter</value>
-          <value>wm.server.net.listeners:disableListener</value>
           <value>wm.server.services.adminui:saveTemplate</value>
-          <value>pub.math:addFloats</value>
+          <value>wm.server.net.listeners:disableListener</value>
           <value>wm.server.net.ftps:shutdown</value>
+          <value>pub.math:addFloats</value>
           <value>pub.soap.utils:convertToVersionSpecificSOAPFault</value>
-          <value>pub.client.ftp:login</value>
           <value>wm.server.query:getSessionList</value>
+          <value>pub.client.ftp:login</value>
           <value>wm.server.access:userUpdate</value>
           <value>pub.date:getCurrentDate</value>
           <value>wm.server.query:getSystemInfoAsXML</value>
@@ -1389,32 +1390,32 @@
           <value>pub.remote.gd:send</value>
           <value>Training.samples:SchedulerExample</value>
           <value>wm.server.graphql:updateGraphQLDescriptor</value>
-          <value>pub.client.ftp:mdelete</value>
-          <value>pub.mime:mergeHeaderAndBody</value>
           <value>wm.server.threadpools.eventmanager:decrease</value>
-          <value>pub.trigger:deleteJMSTrigger</value>
+          <value>pub.mime:mergeHeaderAndBody</value>
+          <value>pub.client.ftp:mdelete</value>
           <value>wm.server.replicator:releasedList</value>
+          <value>pub.trigger:deleteJMSTrigger</value>
           <value>pub.trigger:createJMSTrigger</value>
-          <value>wm.server.ehcache.admin:deleteCacheManager</value>
           <value>wm.server.query.adminui:getSystemAttributes</value>
+          <value>wm.server.ehcache.admin:deleteCacheManager</value>
           <value>wm.server.quiesce:getQuiescePortDetails</value>
           <value>wm.server.packages:packageAddShutdownService</value>
-          <value>pub.pollingNotificationUtils:getDatabaseObjectsForNotification</value>
           <value>wm.server.jwt:listIssuerSkewMappings</value>
+          <value>pub.pollingNotificationUtils:getDatabaseObjectsForNotification</value>
           <value>pub.schema:createXSD</value>
           <value>wm.server.oauth:removeExternalAuthorizationServer</value>
-          <value>pub.remote.gd:restart</value>
           <value>wm.server.jdbcpool:restart</value>
+          <value>pub.remote.gd:restart</value>
           <value>wm.server.deployer.spi.wsProviderV2_.services:GetAssetReferences</value>
-          <value>wm.server.oauth:removeScope</value>
           <value>wm.server.query:isFeatureLicensed</value>
+          <value>wm.server.oauth:removeScope</value>
           <value>wm.server.deployer.spi.wsProvider_.services:ListObjects</value>
           <value>wm.server.ws:refreshWSConnectors</value>
-          <value>wm.server.access:addIdTokenClaim</value>
           <value>wm.art.dev.notification:deletePollingNotificationNode</value>
-          <value>wm.client.integrationlive.connections:uploadUMConnection</value>
-          <value>com.wm.isextdc.config:uninstall</value>
+          <value>wm.server.access:addIdTokenClaim</value>
           <value>pub.packages:installPackage</value>
+          <value>com.wm.isextdc.config:uninstall</value>
+          <value>wm.client.integrationlive.connections:uploadUMConnection</value>
           <value>wm.server.ldap:updatePriority</value>
           <value>wm.server.consul.util:serverList</value>
           <value>wm.server.soap:listDirectives</value>
@@ -1424,18 +1425,18 @@
           <value>pub.string:toUpper</value>
           <value>wm.server.schema:generateFromDTDURL</value>
           <value>wm.server.jwt:listCertMapping</value>
-          <value>wm.server.access:userList</value>
-          <value>wm.server.flow:stepOutputMap</value>
           <value>wm.server.packages:packageInfo</value>
+          <value>wm.server.flow:stepOutputMap</value>
+          <value>wm.server.access:userList</value>
           <value>pub.hashtable:createHashtable</value>
-          <value>wm.server.access:updateAccountLockingSettings</value>
           <value>pub.art.notification:setListenerNotificationNodeListener</value>
+          <value>wm.server.access:updateAccountLockingSettings</value>
           <value>wm.server.deployer:deleteCheckpoint</value>
           <value>pub.flatFile.generate:saveXMLAsFFDictionary</value>
-          <value>wm.server.net:listenerEnable</value>
           <value>wm.server.query:getMessagingAuditSettings</value>
-          <value>wm.server.monitoring:getMetaModelAttributes</value>
+          <value>wm.server.net:listenerEnable</value>
           <value>pub.art.service:setAdapterServiceNodeConnection</value>
+          <value>wm.server.monitoring:getMetaModelAttributes</value>
           <value>wm.server.jms:getTriggerReportWithGroupings</value>
           <value>wm.client.integrationlive.connections:testUMConnectionAlias</value>
           <value>wm.server.web:GetDocumentAsTable</value>
@@ -1443,62 +1444,62 @@
           <value>wm.server.jms:popCSQMessage</value>
           <value>pub.soap.utils:addHeaderEntry</value>
           <value>com.wm.isextdc.config:install</value>
-          <value>pub.publish:waitForReply</value>
           <value>wm.server.messaging:popCSQMessage</value>
-          <value>wm.server.net.email:registerEmailTransaction</value>
+          <value>pub.publish:waitForReply</value>
           <value>wm.server.jdbcpool:getDriverDefinitions</value>
+          <value>wm.server.net.email:registerEmailTransaction</value>
           <value>pub.security.xml:signXML</value>
-          <value>wm.server.ehcache.admin:addCacheManager</value>
           <value>wm.dev.util:getInternalVersion</value>
+          <value>wm.server.ehcache.admin:addCacheManager</value>
           <value>wm.server.query:getSetting</value>
           <value>wm.server.ui:getMenuTabs</value>
           <value>wm.server.deployer:verifyAssets</value>
-          <value>pub.math:multiplyFloatList</value>
-          <value>wm.server.deployer.spi.wsProviderV2_.services:VerifyAssets</value>
           <value>wm.server.ns:getPersistenceEntities</value>
-          <value>wm.server.ws:getEndpoint</value>
+          <value>wm.server.deployer.spi.wsProviderV2_.services:VerifyAssets</value>
+          <value>pub.math:multiplyFloatList</value>
           <value>wm.server.proxy:createProxyServerAlias</value>
-          <value>wm.server.kerberossettings:init</value>
+          <value>wm.server.ws:getEndpoint</value>
           <value>pub.soap.handler:updateFaultBlock</value>
-          <value>wm.server.ws:getMatchingDocumentsForHandlers</value>
-          <value>wm.broker.util:getBrokerNamespace</value>
+          <value>wm.server.kerberossettings:init</value>
           <value>wm.server.nsimpl:getACLInfoForMultipleNodes</value>
+          <value>wm.broker.util:getBrokerNamespace</value>
+          <value>wm.server.ws:getMatchingDocumentsForHandlers</value>
           <value>wm.server.access:removeUsers</value>
-          <value>pub.art.transaction:rollbackTransaction</value>
           <value>pub.soap.utils:getBody</value>
-          <value>pub.security:clearKeyAndChain</value>
+          <value>pub.art.transaction:rollbackTransaction</value>
           <value>wm.server.rsd:getMetaDataForSecurity</value>
+          <value>pub.security:clearKeyAndChain</value>
           <value>wm.server.spm.portSettings:setQuiesceListener</value>
           <value>com.wm.artextdc.pkginit:shutdown</value>
           <value>Training.samples:loopExmpleDocList</value>
           <value>wm.server.enterprisegateway:deleteIPFromDeniedList</value>
-          <value>pub.client.ftp:cdls</value>
           <value>wm.server.jms:createQueue</value>
+          <value>pub.client.ftp:cdls</value>
           <value>pub.soap.handler:unregisterProvider</value>
-          <value>com.wm.isextdc.config:setPollConfiguration</value>
-          <value>wm.server.jdbcpool:getDriverAlias</value>
           <value>wm.server.security.openid:getIdProviderNames</value>
+          <value>wm.server.jdbcpool:getDriverAlias</value>
+          <value>com.wm.isextdc.config:setPollConfiguration</value>
           <value>com.wm.artextdc.ARTPollManager:setAdapterPollInterval</value>
           <value>wm.server.jdbcpool:generateFunctionalAlias</value>
           <value>wm.server.enterprisegateway:updateMobileApplications</value>
-          <value>wm.ps.serviceMock:clearMock</value>
           <value>wm.server.schedule:addUserTask</value>
+          <value>wm.ps.serviceMock:clearMock</value>
           <value>pub.art.notification:disablePollingNotification</value>
           <value>pub.flow:getLastFailureCaught</value>
-          <value>wm.server.ehcache.admin:getCaches</value>
           <value>wm.server.web:GenerateQueryString</value>
+          <value>wm.server.ehcache.admin:getCaches</value>
           <value>wm.server.threadpools.servicethreads:decrease</value>
-          <value>wm.server.soap:findJAXHandlerByName</value>
           <value>wm.server.publish:deliverAndWait</value>
+          <value>wm.server.soap:findJAXHandlerByName</value>
           <value>pub.cache:search</value>
           <value>wm.server.schedule:convertIDataToString</value>
-          <value>pub.smime:createCertsOnlyData</value>
           <value>wm.server.jwt:getIssuer</value>
+          <value>pub.smime:createCertsOnlyData</value>
           <value>wm.server.monitor.serviceAudit:getStatusBargraph</value>
-          <value>wm.server.enterprisegateway:enableDisableRule</value>
-          <value>wm.server.access:updateUsersGroups</value>
-          <value>wm.server.deployer:deliverArtifacts</value>
           <value>wm.adapter.wmjdbc.admin:migrate</value>
+          <value>wm.server.deployer:deliverArtifacts</value>
+          <value>wm.server.access:updateUsersGroups</value>
+          <value>wm.server.enterprisegateway:enableDisableRule</value>
           <value>wm.server.xidl:getSpecsPlus</value>
           <value>wm.bci.redefine:query</value>
           <value>wm.server.replicator:subscriptionEdit</value>
@@ -1509,36 +1510,36 @@
           <value>wm.server.access:getAclGroupUsers</value>
           <value>wm.server.security.KeyStoreUtil:addPrivateKeyEntry</value>
           <value>wm.server.jndi:testJNDILookup</value>
-          <value>wm.server.soap:registerJAXHandler</value>
           <value>wm.server.nsimpl:updateServices</value>
-          <value>pub.io:streamToBytes</value>
+          <value>wm.server.soap:registerJAXHandler</value>
           <value>wm.server.dispatcher:getCSQMigrationInfo</value>
-          <value>wm.server.registry:init</value>
+          <value>pub.io:streamToBytes</value>
           <value>wm.server.deployer.spi.wsProviderV2_.services:Ping</value>
+          <value>wm.server.registry:init</value>
           <value>wm.server.security.openid:getIdProviderNamesUI</value>
           <value>wm.server.access:isDigestAuthAllowedForUser</value>
-          <value>wm.server.security.certificate:updateMapping</value>
           <value>wm.server.ns:unLockMultipleNodes</value>
+          <value>wm.server.security.certificate:updateMapping</value>
           <value>wm.dev.util:disablePasswordChange</value>
           <value>wm.server.oauth:listRefreshTokens</value>
-          <value>wm.server.replicator:packageCreation</value>
-          <value>wm.server.security.KeyStoreUtil:createKeyStore</value>
           <value>wm.server.ui:removeMenu</value>
+          <value>wm.server.security.KeyStoreUtil:createKeyStore</value>
+          <value>wm.server.replicator:packageCreation</value>
           <value>pub.date:calculateDateDifference</value>
           <value>pub.soap.utils:getEncoding</value>
           <value>wm.server.remote:deleteServer</value>
           <value>wm.server.util:getRequestHeader</value>
           <value>wm.server.dispatcher.adminui:getBrokerSettings</value>
-          <value>pub.art.notification:listAdapterListenerNotifications</value>
           <value>wm.server.nsimpl:unlockNodes</value>
-          <value>pub.cache.bulk:isNodeBulkLoadEnabled</value>
+          <value>pub.art.notification:listAdapterListenerNotifications</value>
           <value>pub.cache:remove</value>
+          <value>pub.cache.bulk:isNodeBulkLoadEnabled</value>
           <value>pub.string:makeString</value>
-          <value>pub.string:lookupDictionary</value>
           <value>pub.mime:getEnvelopeStream</value>
+          <value>pub.string:lookupDictionary</value>
           <value>wm.client.integrationlive.connections:upsertUMConnection</value>
-          <value>pub.storage:keys</value>
           <value>wm.dev.util:loadAPI</value>
+          <value>pub.storage:keys</value>
           <value>wm.server.packages:getPackageStatus</value>
           <value>pub.packages:activatePackage</value>
           <value>pub.security.keystore.pkcs7:sign</value>
@@ -1547,29 +1548,29 @@
           <value>wm.server.mapi:isMAPIMonitoringEnabled</value>
           <value>wm.server.consul.util:deleteServer</value>
           <value>wm.server.deployer:activateDeployment</value>
-          <value>pub.mime:getPrimaryContentType</value>
           <value>wm.server.oauth:setExternalAuthorizationServer</value>
+          <value>pub.mime:getPrimaryContentType</value>
           <value>wm.server.nerv:getEventBody</value>
           <value>wm.server.messaging:changeDefaultConnectionAlias</value>
           <value>pub.soap.wsrm:waitUntilSequenceCompleted</value>
-          <value>pub.io:createByteArray</value>
           <value>pub.string:HTMLDecode</value>
-          <value>wm.server.ff:shutdown</value>
+          <value>pub.io:createByteArray</value>
           <value>wm.server.flow:setPipeline</value>
+          <value>wm.server.ff:shutdown</value>
           <value>wm.server.dispatcher:setBrokerSettings</value>
           <value>wm.server.consul.util:addServer</value>
-          <value>wm.server.messaging:getConnectionAliasReport</value>
           <value>wm.server.spm.portSettings:isPortAliasUnique</value>
-          <value>wm.server.healthindicators:getHealthIndicator</value>
-          <value>pub.utils:generateUUID</value>
+          <value>wm.server.messaging:getConnectionAliasReport</value>
           <value>wm.server.ed:submitMany</value>
+          <value>pub.utils:generateUUID</value>
+          <value>wm.server.healthindicators:getHealthIndicator</value>
           <value>wm.server.oauth:listAllScopesAndClientsAssociations</value>
-          <value>wm.server.flowdebugger:insertBreakPoints</value>
           <value>Training.samples:helloWorld</value>
+          <value>wm.server.flowdebugger:insertBreakPoints</value>
           <value>wm.server.query:isSafeMode</value>
           <value>wm.server.jms:updateJMSTrigger</value>
-          <value>wm.xslt.File:save</value>
           <value>wm.server:getServerNodes</value>
+          <value>wm.xslt.File:save</value>
           <value>pub.client.sftp:get</value>
           <value>wm.server.packages:packageListRecoverable</value>
           <value>wm.server.query:getResourceSettings</value>
@@ -1580,32 +1581,32 @@
           <value>pub.math:absoluteValue</value>
           <value>wm.server.admin:quiesceServer</value>
           <value>wm.art.dev.listener:analyzeListenerNodes</value>
-          <value>wm.server.ws:isAddressingActionEditable</value>
           <value>wm.server.remote:aliasExists</value>
+          <value>wm.server.ws:isAddressingActionEditable</value>
           <value>Calc.services:addintlist</value>
           <value>wm.server.admin:setLicenseKeyFile</value>
           <value>pub.art.connection:getInterruptedThreadStatus</value>
-          <value>wm.server.registry:getServerAliases</value>
           <value>pub.cache:putAll</value>
+          <value>wm.server.registry:getServerAliases</value>
           <value>wm.admin.controller:execute</value>
           <value>pub.synchronization.latch:openLatch</value>
-          <value>pub.document:documentToXMLValues</value>
           <value>wm.server.access:aclList</value>
+          <value>pub.document:documentToXMLValues</value>
           <value>pub.packages:enablePackage</value>
           <value>wm.server.spm.portSettings:getConfigurationInstances</value>
           <value>wm.server.ws:closeSequence</value>
           <value>wm.server.access:groupChange</value>
           <value>pub.soap.handler:generateDocumentTypesFromWSDL</value>
-          <value>wm.server:getSessionID</value>
           <value>wm.server.oauth:approve</value>
+          <value>wm.server:getSessionID</value>
           <value>wm.server.jms:disableConnectionAlias</value>
           <value>wm.art.dev.listener:deleteListenerNode</value>
           <value>wm.server.spm.portSettings:setPrimaryListener</value>
           <value>wm.server.ns:setACLInfo</value>
           <value>pub.oauth:revokeToken</value>
-          <value>pub.schema:validatePipeline</value>
-          <value>pub.io:reset</value>
           <value>wm.server.packages:packageListDeletable</value>
+          <value>pub.io:reset</value>
+          <value>pub.schema:validatePipeline</value>
           <value>wm.server.remote:testAlias</value>
           <value>wm.server.access:addUsers</value>
           <value>pub.oauth:authorize</value>
@@ -1614,8 +1615,8 @@
           <value>pub.art.listener:enableListener</value>
           <value>wm.server.packages:packageListInbound</value>
           <value>pub.string:indexOf</value>
-          <value>wm.client.integrationlive.metadatashare:saveApplication</value>
           <value>wm.server.soap:listJAXHandlers</value>
+          <value>wm.client.integrationlive.metadatashare:saveApplication</value>
           <value>wm.server.schedule:convertIntoNonPinnableTask</value>
           <value>pub.string:trim</value>
           <value>wm.server.event:saveEventManagerSettings</value>
@@ -1629,13 +1630,13 @@
           <value>wm.server.ws:listMessageAddressingEndpoints</value>
           <value>pub.math:addFloatList</value>
           <value>pub.client.ftp:mput</value>
-          <value>wm.server.enterprisegateway:listMobileDeviceTypes</value>
           <value>wm.xslt.Admin:saveTransformerFactorySettings</value>
-          <value>wm.server.deployer.spi.wsProvider_.services:DeployObjectsWithVarsub</value>
+          <value>wm.server.enterprisegateway:listMobileDeviceTypes</value>
           <value>wm.server.flow:executeFlowStep</value>
-          <value>wm.server.ehcache.admin:syncCacheConfigToTSA</value>
-          <value>wm.server.util:getHeaderAsBytes</value>
+          <value>wm.server.deployer.spi.wsProvider_.services:DeployObjectsWithVarsub</value>
           <value>wm.server.nsimpl:getMultipleNodes</value>
+          <value>wm.server.util:getHeaderAsBytes</value>
+          <value>wm.server.ehcache.admin:syncCacheConfigToTSA</value>
           <value>wm.server.ldap:editConfiguredServer</value>
           <value>wm.server.ns:makeNode</value>
           <value>wm.server.jms:deleteJMSTrigger</value>
@@ -1644,16 +1645,16 @@
           <value>wm.server.access:groupUpdate</value>
           <value>wm.server.VCS:getFilesToDelete</value>
           <value>wm.jsonapi.mediatype:removeSupport</value>
-          <value>pub.math:addObjects</value>
           <value>wm.server.deployer:deleteBuild</value>
+          <value>pub.math:addObjects</value>
           <value>wm.server.access:removeIdTokenClaim</value>
-          <value>wm.server.ehcache.admin:deleteCache</value>
           <value>wm.server.jms:getSettings</value>
+          <value>wm.server.ehcache.admin:deleteCache</value>
           <value>wm.server.messaging:getCSQMessageCount</value>
           <value>pub.flatFile.generate:getFFDictionaryEntryAsXML</value>
           <value>wm.server.saml:deleteIssuer</value>
-          <value>pub.replicator:getRemoteReleasedList</value>
           <value>wm.server.query:isRemoteInvokeLicensed</value>
+          <value>pub.replicator:getRemoteReleasedList</value>
           <value>wm.server.replicator:pullPackageViaFtp</value>
           <value>pub.xmldata:getGroupValues</value>
           <value>wm.server.services:serviceInfoSet</value>
@@ -1663,55 +1664,55 @@
           <value>wm.server.jdbcpool:updateDriverAlias</value>
           <value>pub.hashtable:containsKey</value>
           <value>wm.server.ns.adminui:getLockedNodesForAllUsers</value>
-          <value>pub.xml:xmlStringToXMLNode</value>
           <value>wm.server.ns:putClass</value>
+          <value>pub.xml:xmlStringToXMLNode</value>
           <value>wm.server.globalvariables:addGlobalVariable</value>
           <value>pub.scheduler:cancelTask</value>
           <value>wm.server.ehcache.admin:updateCache</value>
           <value>wm.server.query:getPrometheusStats</value>
-          <value>pub.hashtable:remove</value>
           <value>pub.art.notification:queryListenerNotificationState</value>
-          <value>pub.universalName:list</value>
-          <value>pub.event.eda:eventToDocument</value>
+          <value>pub.hashtable:remove</value>
           <value>wm.server.wsdl:getWSDL</value>
+          <value>pub.event.eda:eventToDocument</value>
+          <value>pub.universalName:list</value>
           <value>pub.xmldata:setNamespaceTag</value>
-          <value>wm.server.soap:unregisterJAXHandler</value>
-          <value>wm.server.messaging:getDefaultConnectionAlias</value>
-          <value>wm.server.query:getActiveLifecycleListenerList</value>
           <value>wm.server.replicator:subscriptionCancel</value>
+          <value>wm.server.query:getActiveLifecycleListenerList</value>
+          <value>wm.server.messaging:getDefaultConnectionAlias</value>
+          <value>wm.server.soap:unregisterJAXHandler</value>
           <value>wm.server.net:listenerList</value>
           <value>pub.security.util:destroySecureString</value>
-          <value>pub.mime:getContentType</value>
-          <value>wm.client.integrationlive.metadatashare:deleteApplication</value>
           <value>wm.server.spm.portSettings:loadConfiguration</value>
+          <value>wm.client.integrationlive.metadatashare:deleteApplication</value>
+          <value>pub.mime:getContentType</value>
           <value>wm.server.replicator:zip</value>
           <value>pub.remote.gd:retrieve</value>
-          <value>pub.storage:put</value>
           <value>wm.server.sftpclient:createUserAlias</value>
+          <value>pub.storage:put</value>
           <value>wm.server.ehcache.admin:isCacheDisabled</value>
           <value>pub.soap.handler:addHeaderBlock</value>
-          <value>wm.art.dev.service:updateAdapterServiceNode</value>
           <value>wm.server.ff:getDictionaryEntries</value>
+          <value>wm.art.dev.service:updateAdapterServiceNode</value>
           <value>wm.server.threadpools.servicethreads:increase</value>
-          <value>wm.server.query:getThreadDumpForThread</value>
           <value>wm.server.ff:getAllDefinitions</value>
+          <value>wm.server.query:getThreadDumpForThread</value>
           <value>wm.server.ws:deleteProviderEndpoint</value>
-          <value>pub.soap.handler:getMessageAddressingProperties</value>
-          <value>wm.server.internalOutboundPasswords:resetAllPasswords</value>
           <value>wm.server.security.openid:getIdProvider</value>
-          <value>pub.trigger:disableJMSTriggers</value>
+          <value>wm.server.internalOutboundPasswords:resetAllPasswords</value>
+          <value>pub.soap.handler:getMessageAddressingProperties</value>
           <value>pub.soap.utils:getHeader</value>
+          <value>pub.trigger:disableJMSTriggers</value>
           <value>wm.server.jms:updateWSETrigger</value>
           <value>com.wm.isextdc.PkgInit:shutdown</value>
-          <value>wm.server.enterprisegateway:addRule</value>
-          <value>pub.soap.utils:exitUnableToUnderstand</value>
           <value>wm.server.packages:getPackageResourceTree</value>
-          <value>wm.server.sftpclient:getServerHostKey</value>
+          <value>pub.soap.utils:exitUnableToUnderstand</value>
+          <value>wm.server.enterprisegateway:addRule</value>
           <value>wm.server.xarecovery:getWriteRecoveryRecord</value>
+          <value>wm.server.sftpclient:getServerHostKey</value>
           <value>wm.server.jdbcpool:getPoolAlias</value>
           <value>wm.server.oauth:removeAllTokens</value>
-          <value>pub.flatFile.generate:deleteFFSchema</value>
           <value>wm.server.security.keystore:listTrustStoreAliases</value>
+          <value>pub.flatFile.generate:deleteFFSchema</value>
           <value>pub.client.ldap:bind</value>
           <value>wm.server.schedule:cancelUserTaskByName</value>
           <value>wm.server.security.certificate:admin</value>
@@ -1723,15 +1724,15 @@
           <value>wm.server.jms:suspendJMSTriggers</value>
           <value>pub.event.routing:send</value>
           <value>pub.json.schema:validate</value>
-          <value>wm.server.jndi:getJNDIAliases</value>
           <value>wm.server.net.listeners:getServerType</value>
+          <value>wm.server.jndi:getJNDIAliases</value>
           <value>pub.event:addSubscriber</value>
-          <value>pub.storage:closeStore</value>
           <value>wm.server.packages:packageCreate</value>
+          <value>pub.storage:closeStore</value>
           <value>wm.server.services.adminui:serviceInfo</value>
           <value>wm.server.ldap:findLDAPGroups</value>
-          <value>wm.server.net.websocket:closeSession</value>
           <value>pub.jdbcAdapter:createConnectionNodes</value>
+          <value>wm.server.net.websocket:closeSession</value>
           <value>wm.serverimpl:login</value>
           <value>wm.server.record:generateFromDTDString</value>
           <value>wm.server.security.keystore:listKeyStoreAliases</value>
@@ -1740,8 +1741,8 @@
           <value>pub.websocket:pong</value>
           <value>wm.client.integrationlive.metadatashare:getApplications</value>
           <value>pub.soap.handler:setSOAPMessage</value>
-          <value>pub.soap.utils:removeBodyEntry</value>
           <value>wm.server.replicator:queryPublisherForPackages</value>
+          <value>pub.soap.utils:removeBodyEntry</value>
           <value>pub.event:getSubscribers</value>
           <value>pub.json:jsonStringToDocument</value>
           <value>wm.server.ws:is2wsd</value>
@@ -1751,28 +1752,28 @@
           <value>Candidates.services.v1:bulkInsert</value>
           <value>pub.math:randomDouble</value>
           <value>wm.server.admin:refreshAllowedOrigins</value>
-          <value>wm.ps.serviceMock:loadMock</value>
-          <value>wm.art.dev.listener:fetchListenerTemplateMetadata</value>
           <value>wm.server.replicator:unregister</value>
-          <value>wm.server.ldap:addConfiguredServer</value>
+          <value>wm.art.dev.listener:fetchListenerTemplateMetadata</value>
+          <value>wm.ps.serviceMock:loadMock</value>
           <value>wm.server.nsimpl:deleteNodes</value>
+          <value>wm.server.ldap:addConfiguredServer</value>
           <value>wm.bci.redefine:vdetach</value>
-          <value>pub.publish:publishAndWait</value>
           <value>wm.server.ns:getClass</value>
-          <value>wm.server.oauth:mapScopesToClient</value>
+          <value>pub.publish:publishAndWait</value>
           <value>wm.server.query:getAPIGatewayLicenseInfo</value>
-          <value>wm.bci.redefine:attach</value>
+          <value>wm.server.oauth:mapScopesToClient</value>
           <value>wm.server.ws:findConsumerWSDByExternalWSDLUrl</value>
+          <value>wm.bci.redefine:attach</value>
           <value>wm.server.enterprisegateway:deleteRule</value>
           <value>wm.server.access:providerUserList</value>
           <value>wm.server.access:aclChange</value>
           <value>wm.server.cache.adminui:resetCache</value>
-          <value>wm.server.consul.util:getDefaultAlias</value>
-          <value>wm.server.portAccess:addNodes</value>
           <value>wm.server.ns.dependency:isEnabled</value>
+          <value>wm.server.portAccess:addNodes</value>
+          <value>wm.server.consul.util:getDefaultAlias</value>
           <value>wm.server.xidl:getAllSpecs</value>
-          <value>pub.scheduler:migrateTasksToJDBC</value>
           <value>wm.server.query:killThread</value>
+          <value>pub.scheduler:migrateTasksToJDBC</value>
           <value>wm.server.admin:getServerHost</value>
           <value>pub.math:multiplyInts</value>
           <value>wm.server.jms:getConnectionAliasReport</value>
@@ -1780,15 +1781,15 @@
           <value>wm.server.jwt:getSkewForIssuer</value>
           <value>pub.flatFile:convertToString</value>
           <value>pub.cache.atomic:putIfAbsent</value>
-          <value>Calc.services:calcService</value>
           <value>wm.server.sftpclient:testConnection</value>
+          <value>Calc.services:calcService</value>
           <value>pub.soap.utils:getHeaderEntries</value>
-          <value>wm.server.hotdeployment:getHotDeploymentSettings</value>
-          <value>pub.scheduler:getUserTaskList</value>
           <value>wm.server.xarecovery:performActionsOnXAResources</value>
+          <value>pub.scheduler:getUserTaskList</value>
+          <value>wm.server.hotdeployment:getHotDeploymentSettings</value>
           <value>wm.server.triggers:suspendTrigger</value>
-          <value>pub.storage:lock</value>
           <value>wm.server.ns:exportPackage</value>
+          <value>pub.storage:lock</value>
           <value>wm.server.jms:setSettings</value>
           <value>wm.server.flowdebugger:start</value>
           <value>wm.server.ns:getNode</value>
@@ -1801,22 +1802,22 @@
           <value>pub.client.oauth:executeRequest</value>
           <value>wm.server.dispatcher:resubmit</value>
           <value>wm.server.deployer.spi.wsProviderV2_.services:DeleteDeliveredArtifacts</value>
-          <value>wm.server.proxy:enableProxyServerAlias</value>
           <value>wm.server.schedule:init</value>
+          <value>wm.server.proxy:enableProxyServerAlias</value>
           <value>pub.flow:getTransportInfo</value>
           <value>wm.server.tx:start</value>
           <value>pub.client.ldap:cancelNotification</value>
-          <value>wm.server.remote:getServerAliases</value>
           <value>wm.server.ns:moveNode</value>
+          <value>wm.server.remote:getServerAliases</value>
           <value>pub.hashtable:get</value>
           <value>wm.server.ff:setACLs</value>
           <value>Training.samples:getHTTPExample</value>
           <value>Calc.utils:subs</value>
-          <value>pub.event:getEventTypes</value>
           <value>pub.security.pkcs7:verify</value>
+          <value>pub.event:getEventTypes</value>
           <value>wm.server.admin:getServerStatus</value>
-          <value>pub.art.listener:suspendListener</value>
           <value>pub.flow:clearPipeline</value>
+          <value>pub.art.listener:suspendListener</value>
           <value>sample.xslt.helpers:setXslParamInput</value>
           <value>wm.server.net:ipRuleDelete</value>
           <value>pub.datetime:build</value>
@@ -1826,36 +1827,36 @@
           <value>wm.server.ns.dependency:rollbackFolderMove</value>
           <value>wm.server.query:getClusterSettings</value>
           <value>wm.server.tspace:init</value>
-          <value>wm.server.swagger:getSwaggerDoc</value>
           <value>pub.flow:setResponseCode</value>
+          <value>wm.server.swagger:getSwaggerDoc</value>
           <value>pub.soap.utils:getBodyEntries</value>
           <value>pub.cache.admin:enableCache</value>
           <value>pub.security.outboundPasswords:removePassword</value>
           <value>wm.server.ns:syncToNamespace</value>
-          <value>pub.date:currentNanoTime</value>
           <value>wm.server.triggers:getClusterReport</value>
+          <value>pub.date:currentNanoTime</value>
           <value>wm.server.net.ftps:init</value>
           <value>wm.server.oauth:getExternalAuthorizationServer</value>
           <value>Training.samples:SMTPSample</value>
-          <value>pub.soap.handler:getHeaderBlockQNames</value>
           <value>pub.art.listener:disableListener</value>
-          <value>pub.security.util:loadPKCS7CertChain</value>
+          <value>pub.soap.handler:getHeaderBlockQNames</value>
           <value>wm.xslt.File:read</value>
+          <value>pub.security.util:loadPKCS7CertChain</value>
           <value>wm.server.jms:enableConnectionAlias</value>
-          <value>pub.xmldata:getNamespaceTags</value>
           <value>wm.server.query:getStats</value>
+          <value>pub.xmldata:getNamespaceTags</value>
           <value>wm.server.ns:getLockingMode</value>
-          <value>wm.server.replicator.adminui:packageSendZip</value>
           <value>wm.server.replicator.adminui:subscriberEdit</value>
-          <value>pub.list:sizeOfList</value>
+          <value>wm.server.replicator.adminui:packageSendZip</value>
           <value>pub.flow:debugLog</value>
+          <value>pub.list:sizeOfList</value>
           <value>pub.remote.gd:invoke</value>
-          <value>wm.server.jdbcpool:addFunctionalAlias</value>
-          <value>wm.server.net.listeners:addSecurityProvider</value>
           <value>wm.server.ns:getACLInfo</value>
+          <value>wm.server.net.listeners:addSecurityProvider</value>
+          <value>wm.server.jdbcpool:addFunctionalAlias</value>
           <value>wm.server.mqtt:enableConnectionAlias</value>
-          <value>wm.server.ns:lockMultipleNodes</value>
           <value>wm.server.publish:publishAndWait</value>
+          <value>wm.server.ns:lockMultipleNodes</value>
           <value>pub.art.notification:setPollingNotificationNodeConnection</value>
           <value>wm.server.healthindicators:getAllHealthIndicators</value>
           <value>MyWorks.services:testRepeat</value>
@@ -1863,24 +1864,24 @@
           <value>pub.security.xml:encryptXML</value>
           <value>wm.server.ns:getMethod</value>
           <value>wm.server.ws:getConsumerEndpoint</value>
-          <value>wm.server.access:setUserDisabled</value>
           <value>wm.server.record:generateFromJSONSchema</value>
+          <value>wm.server.access:setUserDisabled</value>
           <value>wm.server.proxy:getDefaultHTTPProxyAlias</value>
           <value>wm.server.web:QueryDocumentWithIdentity</value>
           <value>pub.storage:registerStore</value>
-          <value>wm.server.messaging:peekCSQMessage</value>
           <value>wm.server.monitor.serviceAudit:getServiceDetailsById</value>
+          <value>wm.server.messaging:peekCSQMessage</value>
           <value>pub.file:moveFile</value>
           <value>wm.server.net.listeners:deleteListener</value>
           <value>wm.server.dispatcher.adminui:clearDupeOrInDoubtDocsStat</value>
           <value>wm.server.sftpclient:updateCommonConfig</value>
           <value>pub.json:documentToJSONString</value>
-          <value>pub.xml:freeXMLNode</value>
           <value>wm.server.ws:deleteMessageAddressingEndpoint</value>
-          <value>wm.server.admin:killAllExceptYourSession</value>
+          <value>pub.xml:freeXMLNode</value>
           <value>wm.server.xarecovery:eraseTransaction</value>
-          <value>pub.cache.lock:acquireLock</value>
+          <value>wm.server.admin:killAllExceptYourSession</value>
           <value>pub.jms:waitForReply</value>
+          <value>pub.cache.lock:acquireLock</value>
           <value>wm.server.proxy:getDefaultFTPProxyAlias</value>
           <value>wm.server.ns:checkForChildLocks</value>
           <value>wm.server.access.adminui:aclList</value>
@@ -1888,26 +1889,26 @@
           <value>wm.server.ns:getNodeLockStatus</value>
           <value>wm.server.flow:updatePipeline</value>
           <value>pub.flow:iterator</value>
-          <value>wm.server.dispatcher.adminui:clearTriggerDupeOrInDoubtDocsStat</value>
           <value>wm.server.util:putPackageFile</value>
-          <value>pub.flatFile.generate:getFFSchemaAsXML</value>
+          <value>wm.server.dispatcher.adminui:clearTriggerDupeOrInDoubtDocsStat</value>
           <value>wm.server.dispatcher:deleteRejectedMessages</value>
-          <value>pub.packages:reloadPackage</value>
+          <value>pub.flatFile.generate:getFFSchemaAsXML</value>
           <value>wm.server:disconnect</value>
+          <value>pub.packages:reloadPackage</value>
           <value>pub.storage:remove</value>
           <value>wm.server.deployer:deployObjectsViaSPI</value>
-          <value>wm.server.flowdebugger:removeAllBreakPoints</value>
-          <value>wm.server.jndi:setCDSSettings</value>
           <value>wm.server.proxy:getProxyServerDetails</value>
+          <value>wm.server.jndi:setCDSSettings</value>
+          <value>wm.server.flowdebugger:removeAllBreakPoints</value>
           <value>wm.server.spm.JNDISettings:testJNDIConfiguration</value>
           <value>wm.server.internalOutboundPasswords:listAdminHandles</value>
           <value>wm.server.ws:getWsdName</value>
-          <value>wm.server.admin:initHelpTopicURLMappings</value>
           <value>pub.cache.serviceResults:resetServerCache</value>
+          <value>wm.server.admin:initHelpTopicURLMappings</value>
           <value>Training.samples:sequenceStepsEx</value>
           <value>wm.server.consul.util:getAliasValues</value>
-          <value>wm.server.query:getTriggerThrottleControlSettings</value>
           <value>wm.broker.util:isConnected</value>
+          <value>wm.server.query:getTriggerThrottleControlSettings</value>
           <value>pub.client.sftp:pwd</value>
         </list>
       </record>

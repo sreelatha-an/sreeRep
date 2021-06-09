@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT></COMMENT>
 
   <!-- nodes -->
 
@@ -380,7 +381,8 @@
 
 <SEQUENCE TIMEOUT="" EXIT-ON="FAILURE" FORM="FINALLY">
   <COMMENT></COMMENT>
-</SEQUENCE>
+
+  <!-- nodes -->
 
 <MAP TIMEOUT="" MODE="STANDALONE">
   <COMMENT></COMMENT>
@@ -543,4 +545,5 @@
 <EXIT FROM="$parent" SIGNAL="SUCCESS" FAILURE-MESSAGE="">
   <COMMENT></COMMENT>
 </EXIT>
+</SEQUENCE>
 </FLOW>

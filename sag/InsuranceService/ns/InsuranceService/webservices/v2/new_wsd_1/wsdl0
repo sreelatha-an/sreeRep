@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="new_wsd" targetNamespace="http://DESKTOP-NTLDDJ1/InsuranceService.webservices.v2:new_wsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://DESKTOP-NTLDDJ1/InsuranceService.webservices.v2:new_wsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://DESKTOP-NTLDDJ1/InsuranceService.webservices.v2:new_wsd" xmlns:tns="http://DESKTOP-NTLDDJ1/InsuranceService.webservices.v2:new_wsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <xsd:element name="cancelInsured" type="tns:cancelInsured"/>
+          <xsd:element name="cancelInsuredResponse" type="tns:cancelInsuredResponse"/>
+          <xsd:element name="consumedmlsInsuredClaims" type="tns:consumedmlsInsuredClaims"/>
+          <xsd:element name="createClaims" type="tns:createClaims"/>
+          <xsd:element name="createClaimsResponse" type="tns:createClaimsResponse"/>
+          <xsd:complexType name="cancelInsured">
+            <xsd:sequence>
+              <xsd:element name="POLICY_NUMBER_1" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="cancelInsuredResponse">
+            <xsd:sequence>
+              <xsd:element name="NO_CLAIMS_DELETED" nillable="true" type="xsd:string"/>
+              <xsd:element name="NO_POLICY_DELETED" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="consumedmlsInsuredClaims">
+            <xsd:sequence>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="createClaims">
+            <xsd:sequence>
+              <xsd:element name="DATE" nillable="true" type="xsd:string"/>
+              <xsd:element name="DETAILS" nillable="true" type="xsd:string"/>
+              <xsd:element name="HOSPITAL_NAME" nillable="true" type="xsd:string"/>
+              <xsd:element name="POLICY_NUMBER" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="createClaimsResponse">
+            <xsd:sequence>
+              <xsd:element name="NO_OF_CLAIMS" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="new_wsd_PortType_cancelInsuredResponse">
+    <wsdl:part name="parameters" element="tns:cancelInsuredResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="new_wsd_PortType_createClaims">
+    <wsdl:part name="parameters" element="tns:createClaims">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="new_wsd_PortType_cancelInsured">
+    <wsdl:part name="parameters" element="tns:cancelInsured">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="new_wsd_PortType_createClaimsResponse">
+    <wsdl:part name="parameters" element="tns:createClaimsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="new_wsd_PortType_consumedmlsInsuredClaims">
+    <wsdl:part name="parameters" element="tns:consumedmlsInsuredClaims">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="new_wsd_PortType">
+    <wsdl:operation name="cancelInsured">
+      <wsdl:input message="tns:new_wsd_PortType_cancelInsured">
+    </wsdl:input>
+      <wsdl:output message="tns:new_wsd_PortType_cancelInsuredResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consumedmlsInsuredClaims">
+      <wsdl:input message="tns:new_wsd_PortType_consumedmlsInsuredClaims">
+    </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="createClaims">
+      <wsdl:input message="tns:new_wsd_PortType_createClaims">
+    </wsdl:input>
+      <wsdl:output message="tns:new_wsd_PortType_createClaimsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="InsuranceService_webservices_v2_new_wsd_Binder" type="tns:new_wsd_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="cancelInsured">
+      <soap:operation soapAction="InsuranceService_webservices_v2_new_wsd_Binder_cancelInsured" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consumedmlsInsuredClaims">
+      <soap:operation soapAction="InsuranceService_webservices_v2_new_wsd_Binder_consumedmlsInsuredClaims" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="createClaims">
+      <soap:operation soapAction="InsuranceService_webservices_v2_new_wsd_Binder_createClaims" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InsuranceService.webservices.v2.new_wsd">
+    <wsdl:port name="InsuranceService_webservices_v2_new_wsd_Port" binding="tns:InsuranceService_webservices_v2_new_wsd_Binder">
+      <soap:address location="http://DESKTOP-NTLDDJ1:5555/ws/InsuranceService.webservices.v2:new_wsd/InsuranceService_webservices_v2_new_wsd_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

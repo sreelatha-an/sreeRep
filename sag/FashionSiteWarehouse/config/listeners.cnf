@@ -24,25 +24,26 @@
       <value name="curDelay">0</value>
       <value name="stepsize">10000</value>
       <value name="suspended">false</value>
+      <null name="jsseDisabledProtocols"/>
       <null name="jsseEnabledProtocols"/>
     </record>
-    <record name="FilePollingListener:C:/wMServiceDesigner/sreefiles/BrandXYZ/filepools/Orders" javaclass="com.wm.util.Values">
-      <value name="port">C:/wMServiceDesigner/sreefiles/BrandXYZ/filepools/Orders</value>
+    <record name="FilePollingListener:C:/sreefiles/orders" javaclass="com.wm.util.Values">
+      <value name="port">C:/sreefiles/orders</value>
       <value name="protocol">FilePolling</value>
       <value name="pkg">FashionSiteWarehouse</value>
       <value name="enabled">true</value>
-      <value name="key">FilePollingListener:C:/wMServiceDesigner/sreefiles/BrandXYZ/filepools/Orders</value>
+      <value name="key">FilePollingListener:C:/sreefiles/orders</value>
       <value name="portAlias">OrdersPoolingPort</value>
       <value name="portDescription">OrdersPoolingPort</value>
       <value name="factoryKey">webMethods/FilePolling</value>
       <value name="configURL">/WmFlatFile/configFilePolling.dsp</value>
       <value name="provider">webMethods</value>
-      <value name="monitorDir">C:/wMServiceDesigner/sreefiles/BrandXYZ/filepools/Orders</value>
+      <value name="monitorDir">C:/sreefiles/orders</value>
       <value name="recursive">no</value>
       <value name="clusterEnabled">no</value>
       <value name="cleanupAtStartup">yes</value>
       <value name="runUser">Administrator</value>
-      <value name="processingService">FashionSiteWarehouse.services.v1:poolingService</value>
+      <value name="processingService">FashionSiteWarehouse.services.v1:testpool</value>
       <value name="filePollingInterval">5</value>
       <value name="logMinMessage">no</value>
       <value name="NFSDirectories">no</value>
@@ -61,68 +62,68 @@
         <list name="elements">
           <value>FashionSiteServices.utils.v1:validateAcceptNotification</value>
           <value>FashionSiteServices.services.v2:createContacts</value>
-          <value>FashionSiteServices.services.v1:getOrderbyOrderId</value>
           <value>FashionSiteServices.utils.v1:validateIsVerified</value>
+          <value>FashionSiteServices.services.v1:getOrderbyOrderId</value>
           <value>FashionSiteServices.services.v1:saveOrderEmailNPost</value>
           <value>FashionSiteServices.services.v2:saveContactsxx</value>
-          <value>wm.server:disconnect</value>
-          <value>wm.server.csrfguard:replaceSpecialCharacters</value>
           <value>FashionSiteServices.utils.v1:generateOTP</value>
-          <value>wm.server:ping</value>
+          <value>wm.server.csrfguard:replaceSpecialCharacters</value>
+          <value>wm.server:disconnect</value>
           <value>FashionSiteServices.services.v1:createCustomersFile</value>
+          <value>wm.server:ping</value>
           <value>FashionSiteWarehouse.services.v1:checkFileForPooling</value>
           <value>wm.server.tx:end</value>
           <value>FashionSiteServices.services.v1:updateOrder</value>
           <value>FashionSiteServices.services.v1:isEmailAlreadyExists</value>
-          <value>wm.server:getClusterNodes</value>
           <value>FashionSiteServices.services.v1:customerValidFailProc</value>
+          <value>wm.server:getClusterNodes</value>
           <value>FashionSiteWarehouse.services.v1:poolingService</value>
           <value>wm.server:getServerNodes</value>
-          <value>FashionSiteServices.services.v1:deleteOrder</value>
           <value>FashionSiteServices.utils.v2:validateEmail</value>
+          <value>FashionSiteServices.services.v1:deleteOrder</value>
           <value>FashionSiteServices.services.v1:shareOrdersInaPost</value>
           <value>FashionSiteServices.utils.v2:validateMobileNo</value>
           <value>FashionSiteServices.services.v2:NewContactDetails</value>
           <value>FashionSiteServices.services.v2:createContactsFilexx</value>
-          <value>FashionSiteServices.services.v2:contactValidFailProcc</value>
           <value>FashionSiteServices.services.v2:createContactsxx</value>
+          <value>FashionSiteServices.services.v2:contactValidFailProcc</value>
           <value>FashionSiteServices.utils.v1:sendEmail</value>
           <value>FashionSiteServices.services.v1:deleteAllOrders</value>
           <value>wm.server.csrfguard:isCSRFGuardEnabled</value>
           <value>FashionSiteServices.services.v1:NewCustomerSignUp</value>
           <value>FashionSiteServices.utils.v1:validateEmail</value>
           <value>FashionSiteServices.services.v1:saveCustomers</value>
-          <value>wm.server:noop</value>
           <value>FashionSiteServices.services.v1:saveOrdersFromXML</value>
+          <value>wm.server:noop</value>
           <value>FashionSiteServices.services.v1:getOrderIfExists</value>
           <value>FashionSiteServices.services.v2:contactValidSuccProc</value>
           <value>FashionSiteServices.services.v2:UpdateContactsFile</value>
           <value>wm.server.csrfguard:getCSRFSecretToken</value>
           <value>FashionSiteWarehouse.services.v1:testpool</value>
-          <value>wm.server.tx:execute</value>
           <value>FashionSiteServices.services.v1:getAllCachedOrders</value>
+          <value>wm.server.tx:execute</value>
           <value>FashionSiteServices.services.v1:customerValidSuccProc</value>
           <value>wm.server.tx:start</value>
           <value>FashionSiteServices.services.v1:saveOrder</value>
           <value>BrandXYZ.services.v1:generateOrderFiles</value>
-          <value>wm.server:connect</value>
           <value>BrandXYZ.services.v1:generateAllOrdersXml</value>
+          <value>wm.server:connect</value>
           <value>FashionSiteServices.services.v2:searchContacts</value>
-          <value>wm.server.tx:restart</value>
           <value>FashionSiteServices.utils.v1:validateMobileNo</value>
+          <value>wm.server.tx:restart</value>
           <value>FashionSiteServices.services.v2:createContactsFile</value>
         </list>
       </record>
       <value name="key">HTTPListener@5511</value>
     </record>
-    <record name="FilePollingListener:C:/wMServiceDesigner/sreefiles/BrandXYZ/filepools/Orders" javaclass="com.wm.util.Values">
+    <record name="FilePollingListener:C:/sreefiles/orders" javaclass="com.wm.util.Values">
       <null name="home"/>
       <value name="default">include</value>
       <record name="nodes" javaclass="com.wm.util.StringSet">
         <list name="elements">
         </list>
       </record>
-      <value name="key">FilePollingListener:C:/wMServiceDesigner/sreefiles/BrandXYZ/filepools/Orders</value>
+      <value name="key">FilePollingListener:C:/sreefiles/orders</value>
     </record>
   </record>
 </Values>
